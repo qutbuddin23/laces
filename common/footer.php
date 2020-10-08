@@ -1,29 +1,30 @@
-<footer id="footer">
-						
-							<div class="container">
+               <footer id="footer">
+
+						<div class="inner">
+							<section>
+                     <div class="container">
 								<form id="registration_form">
-									<div>
-									<h2>Get in touch</h2>
-										<input type="text" id="form_fname" name="" required="" >
-										<span class="error_form" id="fname_error_message"></span>
-										<label>
-										 Name
-										</label>	
-									</div>
-									<div class="field half">
-										<input type="email" id="form_email" name="" required="">
-										<span class="error_form" id="email_error_message"></span>
-										<label>Email id</label>	
-									</div>
-									<div class="field">
-											<textarea name="message" id="message" ></textarea>
-											<label>
-										 message
-										</label>
+								<h2>Get in touch</h2>
+                        <form method="$_POST" action="actions.php">
+									<div class="fields">
+										<div class="field half">
+                                 <input type="text" name="name" id="form_fname"  placeholder="Name" />
+                                 <span class="error_form" id="fname_error_message" ></span>
 										</div>
+										<div class="field half">
+                                 <input type="email" name="email" id="form_email" placeholder="Email" />
+                                 <span class="error_form" id="email_error_message"></span>
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
 									<ul class="actions">
 										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul> 
+									</ul>
+								</form>
+                     </section>
+                    
 							<section>
 								<h2>Follow</h2>
 								<ul class="icons">
@@ -50,14 +51,16 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-			<script type="text/javascript">
+         <script type="text/javascript">
       $(function() {
 
          $("#fname_error_message").hide();
          $("#email_error_message").hide();
 
+
          var error_fname = false;
          var error_email = false;
+
 
          $("#form_fname").focusout(function(){
             check_fname();
@@ -80,8 +83,6 @@
             }
          }
 
-    
-
          function check_email() {
             var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
             var email = $("#form_email").val();
@@ -99,12 +100,13 @@
          $("#registration_form").submit(function() {
             error_fname = false;
             error_email = false;
-           
+
+
             check_fname();
             check_email();
-           
 
-            if (error_fname === false &&  error_email === false ) {
+
+            if (error_fname === false && error_email === false ) {
                alert("Registration Successfull");
                return true;
             } else {
@@ -116,5 +118,9 @@
          });
       });
    </script>
-</body>
-</html>
+ <?php
+ 
+ 
+
+ 
+ ?>

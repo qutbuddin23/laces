@@ -21,8 +21,8 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.php">Home</a></li>
-							<li><a href="about.php">about</a></li>
-							<li><a href="galleys.php">gallery</a></li>
+							<li><a href="about.php">About</a></li>
+							<li><a href="galleys.php">Gallery</a></li>
 							<li><a href="laces.php">types of laces</a></li>
 							<li><a href="contact.php">contatc</a></li>
 						</ul>

@@ -17,6 +17,11 @@
 						include_once('common/menu.php');
 					?>
 
+				<?php
+					if(isset($_GET['success']) && $_GET['success'] == true) {
+						echo "<script> alert('Thank you for submitting your information!');window.location = 'http://localhost:8000/index.php'</script>";
+					}
+				?>
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">

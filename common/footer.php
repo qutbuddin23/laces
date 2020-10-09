@@ -1,18 +1,17 @@
-               <footer id="footer">
-
+     
+                  	<footer id="footer">
 						<div class="inner">
 							<section>
                      <div class="container">
-								<form id="registration_form">
-								<h2>Get in touch</h2>
-                        <form method="$_POST" action="actions.php">
+                     <h2>Get in touch</h2>
+								<form id="registration_form" method="POST" action="../actions.php">
 									<div class="fields">
-										<div class="field half">
-                                 <input type="text" name="name" id="form_fname"  placeholder="Name" />
+										<div class="field half">      
+                                 <input type="text" name="name" id="form_fname" required="" placeholder="Name" />
                                  <span class="error_form" id="fname_error_message" ></span>
 										</div>
 										<div class="field half">
-                                 <input type="email" name="email" id="form_email" placeholder="Email" />
+                                 <input type="email" name="email" id="form_email"required="" placeholder="Email" />
                                  <span class="error_form" id="email_error_message"></span>
 										</div>
 										<div class="field">
@@ -107,7 +106,6 @@
 
 
             if (error_fname === false && error_email === false ) {
-               alert("Registration Successfull");
                return true;
             } else {
                alert("Please Fill the form Correctly");
@@ -118,9 +116,4 @@
          });
       });
    </script>
- <?php
  
- 
-
- 
- ?>

@@ -23,7 +23,7 @@
 							<li><a href="index.php">Home</a></li>
 							<li><a href="about.php">About</a></li>
 							<li><a href="galleys.php">Gallery</a></li>
-							<li><a href="laces.php">types of laces</a></li>
-							<li><a href="contact.php">contatc</a></li>
+							<li><a href="laces.php">Types of laces</a></li>
+							<li><a href="contact.php">Contacts</a></li>
 						</ul>
 					</nav>
